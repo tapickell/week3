@@ -7,30 +7,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <h2>Where's my pic?</h2>
-          <img src="C:\Users\Toad\code\Basic-Portfolio\assets\images\me.jpeg" alt="Where's my pic?">
-        </div>
-        <div class="col-md-3">
-          <h2>Where's my pic?</h2>
-          <img src="/Users/Toad/code/Basic-Portfolio/assets/images/me.jpeg" alt="Where's my pic?">
-        </div>
-        <div class="col-md-3">
-          <h2>Here's my pic!</h2>
-          <img src="assets/images/me.jpeg" alt="Here it is">
-        </div>
-      </div>
-    </div>
     <script>
-        // Prompt Code
+      function div(classy, inner_html) {
+        return "<div class=" + classy + ">" + inner_html + "</div>"
+      }
+      function p(inner_html) {
+        return "<p>" + inner_html + "</p>"
+      }
+      var from_p = p("Hey this is in the body")
+      var from_div = div('jumbotron', from_p)
+      var my_html = from_div
+      document.write(my_html);
         // Document Write - let's generate all the things!!!1!
         // Conditional Code
         // Conditional Path Tree Demo
         // Arrays(Lists) People Demo
         // Arrays(Lists) Code
         // Refactor all the things with Lists, maybe
+
+        var var1 = 42
+        var var2 = "42"
+        if (var1 = var2) {
+          console.log("YEP")
+        } else {
+          alert("THAT DID NOT WORK YOUR CODEZ ARE BORKED")
+        }
+
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
